@@ -1,4 +1,4 @@
-import { Container } from './styles';
+import { Container, Products } from './styles';
 import { Header } from '../../components/Header';
 import { ProductBuy } from '../../components/ProductBuy';
 
@@ -7,7 +7,7 @@ export function Home() {
     <Container>
       <Header/>
 
-      <div className='grid'>
+      <Products>
         <ProductBuy/>
         <ProductBuy/>
         <ProductBuy/>
@@ -17,8 +17,7 @@ export function Home() {
         <ProductBuy/>
         <ProductBuy/>
         <ProductBuy/>
-      </div>
-
+      </Products>
     </Container>
   );
 };
